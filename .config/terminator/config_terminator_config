@@ -1,0 +1,86 @@
+[global_config]
+  enabled_plugins = InactivityWatch, CustomCommandsMenu, ActivityWatch, TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  extra_styling = False
+  handle_size = 0
+  inactive_color_offset = 0.9
+  suppress_multiple_term_dialog = True
+  title_font = Monospace Bold 6
+  title_hide_sizetext = True
+  title_inactive_bg_color = "#3c162f"
+  title_inactive_fg_color = "#ffffff"
+  title_receive_bg_color = "#3c162f"
+  title_transmit_bg_color = "#72355c"
+  title_use_system_font = False
+[keybindings]
+  close_term = <Primary><Shift>q
+  close_window = <Primary><Shift>F4
+  split_horiz = <Primary><Alt>h
+  split_vert = <Primary><Alt>v
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 50473359-a580-46fd-bda0-28c978a78a43
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1920:27
+      size = 1920, 983
+      title = gillesde@oc2243470468:~
+      type = Window
+    [[[terminal1]]]
+      order = 0
+      parent = child0
+      profile = default
+      type = Terminal
+      uuid = 50473359-a580-46fd-bda0-28c978a78a43
+  [[Dual Window]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 50473359-a580-46fd-bda0-28c978a78a43
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1920:27
+      size = 1920, 983
+      title = gillesde@oc2243470468:~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 961
+      ratio = 0.500520833333
+      type = HPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 50473359-a580-46fd-bda0-28c978a78a43
+    [[[terminal3]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = ceb188ca-686b-4e18-8018-b545caa331c0
+[plugins]
+  [[CustomCommandsMenu]]
+    [[[status]]]
+      command = hostname; hostname -I; uptime; free -m;
+      enabled = True
+      name = status
+      position = 0
+[profiles]
+  [[default]]
+    background_color = "#3c162f"
+    background_darkness = 0.92
+    cursor_color = "#ffffff"
+    font = Monospace 11.5
+    foreground_color = "#ffffff"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scrollback_lines = 1000000
+    scrollbar_position = hidden
+    split_to_group = True
+    use_system_font = False
