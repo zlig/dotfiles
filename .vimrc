@@ -1,6 +1,7 @@
 syntax on
 set noai
-set tabstop=8 expandtab shiftwidth=4 softtabstop=4
+set expandtab
+set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 set paste
 
 set nu
